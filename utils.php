@@ -2,11 +2,13 @@
 
 date_default_timezone_set('UTC');
 
-$config['proxy_name'] = 'wwwcache.gla.ac.uk';
-$config['proxy_port'] = 8080;
+// By default assume not behind HTTP proxy
+$config['proxy_name'] = '';
+$config['proxy_port'] = '';
 
-//$config['proxy_name'] = '';
-//$config['proxy_port'] = '';
+// If you are behind a proxy uncomment these lines and add your proxy details
+//$config['proxy_name'] = 'wwwcache.gla.ac.uk';
+//$config['proxy_port'] = 8080;
 
 //--------------------------------------------------------------------------------------------------
 /**
