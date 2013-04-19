@@ -60,7 +60,7 @@ function xml_edits($xml, $limit = 0)
 	$dom->loadXML($xml);
 	$xpath = new DOMXPath($dom);
 	// Add namespaces to XPath to ensure our queries work
-	$xpath->registerNamespace("wiki", "http://www.mediawiki.org/xml/export-0.5/");
+	$xpath->registerNamespace("wiki", "http://www.mediawiki.org/xml/export-0.8/");
 	$xpath->registerNamespace("xsi", "http://www.w3.org/2001/XMLSchema-instance");
 	$nodeCollection = $xpath->query ("//wiki:revision");
 	
