@@ -16,11 +16,11 @@ To use this script make sure check the values for
 
 `$config['proxy_port']=''`
 
-in the file `utils.php`. If you are behind a HTTP proxy then you'll need to enter the name and por tof your proxy, otherwise leave them as ''.
+in the file `utils.php`. If you are behind a HTTP proxy then you'll need to enter the name and port of your proxy, otherwise leave them as ''.
 
 #### What can go wrong
 Apart from the fact that the SVG may take a while to render, the code is sensitive to changes in the XML returned by Wikipedia. The history of edits is recorded in the XML file returned by
 
 `http://en.wikipedia.org/wiki/Special:Export/[page title]?history`
 
-The "wiki" namespace version changes over time (it is currently 0.5, i.e. `http://www.mediawiki.org/xml/export-0.5/`). This is hard-coded in the file `history.php`, and will need to be changed changed if Wikipedia increments this version of the namespace.
+The "wiki" namespace version changes over time (it is currently 0.5, i.e. `http://www.mediawiki.org/xml/export-0.5/`). This is hard-coded in the file `history.php`, and will need to be changed if Wikipedia increments this version of the namespace.
