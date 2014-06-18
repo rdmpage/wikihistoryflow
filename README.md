@@ -23,4 +23,4 @@ Apart from the fact that the SVG may take a while to render, the code is sensiti
 
 `http://en.wikipedia.org/wiki/Special:Export/[page title]?history`
 
-The "wiki" namespace version changes over time (it is currently 0.5, i.e. `http://www.mediawiki.org/xml/export-0.5/`). This is hard-coded in the file `history.php`, and will need to be changed if Wikipedia increments this version of the namespace.
+The "wiki" namespace version changes over time (it is currently 0.5, i.e. `http://www.mediawiki.org/xml/export-0.5/`). This is hard-coded in the file `history.php`, and will need to be changed if Wikipedia increments this version of the namespace. You can inspect the current namespace version here: https://en.wikipedia.org/w/index.php?title=Special:Export&action=submit
