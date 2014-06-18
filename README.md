@@ -1,7 +1,7 @@
 # Wiki History Flow
 
 #### Overview
-This code creates a simple web site that queries Wikipedia to get the edit history of a page and renders it as a "history flow" in SVG. For background see [Visualising edit history of a Wikipedia page](http://iphylo.blogspot.com/2009/09/visualising-edit-history-of-wikipedia.html). Inspiration came from Jeff Attwood\'s post [Mixing Oil and Water: Authorship in a Wiki World](http://www.codinghorror.com/blog/archives/001222.html), which discusses the [History Flow project](http://researchweb.watson.ibm.com/visual/projects/history_flow/explanation.htm). 
+This code creates a simple web site that queries Wikipedia to get the edit history of a page and renders it as a "history flow" in SVG. For background see [Visualising edit history of a Wikipedia page](http://iphylo.blogspot.com/2009/09/visualising-edit-history-of-wikipedia.html). Inspiration came from Jeff Attwood's post [Mixing Oil and Water: Authorship in a Wiki World](http://www.codinghorror.com/blog/archives/001222.html), which discusses the [History Flow project](http://researchweb.watson.ibm.com/visual/projects/history_flow/explanation.htm). 
 
 Below is the history flow for the [Wikipedia article on Phylogeny](http://en.wikipedia.org/wiki/Phylogeny):
 
