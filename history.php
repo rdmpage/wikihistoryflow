@@ -56,11 +56,20 @@ function distanceOfTimeInWords($from_time, $to_time = 0, $include_seconds = fals
 // Common point of failure is an updated wiki namespace
 function xml_edits($xml, $limit = 0)
 {
+	// detect namespace
+	
+	$namespace = 'http://www.mediawiki.org/xml/export-0.8/';
+	
+	if (preg_match('/xmlns="(?<namespace>http:\/\/www.mediawiki.org\/xml\/export-(\d+(\.\d+))\/)"/U', $xml, $m))
+	{
+		$namespace = $m['namespace'];
+	}
+
 	$dom= new DOMDocument;
 	$dom->loadXML($xml);
 	$xpath = new DOMXPath($dom);
 	// Add namespaces to XPath to ensure our queries work
-	$xpath->registerNamespace("wiki", "http://www.mediawiki.org/xml/export-0.8/");
+	$xpath->registerNamespace("wiki", $namespace);
 	$xpath->registerNamespace("xsi", "http://www.w3.org/2001/XMLSchema-instance");
 	$nodeCollection = $xpath->query ("//wiki:revision");
 	
